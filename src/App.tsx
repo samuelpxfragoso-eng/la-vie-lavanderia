@@ -58,7 +58,7 @@ const FAQSection = () => {
             Dúvidas Comuns
           </div>
           <h2 className="font-serif text-5xl lg:text-6xl font-bold text-lavie-navy mb-6">Perguntas <span className="text-lavie-gold italic">Frequentes.</span></h2>
-          <p className="text-lavie-navy/50 font-medium italic">Tudo o que você precisa saber sobre o cuidado premium La Vie.</p>
+          <p className="text-lavie-navy/50 font-medium italic">Tudo o que você precisa saber sobre o cuidado premium <span translate="no">La Vie</span>.</p>
         </div>
 
         <div className="space-y-4">
@@ -206,7 +206,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="flex flex-col -space-y-1 hidden sm:flex">
-                <span className="font-serif text-2xl font-bold text-lavie-navy tracking-tight">
+                <span className="font-serif text-2xl font-bold text-lavie-navy tracking-tight" translate="no">
                   LA <span className="text-lavie-gold">VIE</span>
                 </span>
                 <span className="font-sans text-[8px] font-black uppercase tracking-[0.4em] text-lavie-pool">
@@ -285,7 +285,7 @@ const GoogleReviews = () => {
               />
               <h2 className="font-serif text-4xl font-bold text-lavie-navy">Experiências Reais</h2>
             </div>
-            <p className="text-lavie-navy/50 text-sm font-bold uppercase tracking-widest">O que nossos clientes dizem sobre o cuidado La Vie</p>
+            <p className="text-lavie-navy/50 text-sm font-bold uppercase tracking-widest">O que nossos clientes dizem sobre o cuidado <span translate="no">La Vie</span></p>
           </div>
           
           <div className="flex flex-col items-start md:items-end gap-4">
@@ -388,13 +388,80 @@ const SixtyMinSection = () => {
                 playsInline
                 className="w-full h-full object-cover"
               >
-                <source src="https://res.cloudinary.com/dqukldtq1/video/upload/v1777834642/SnapInsta.to_AQMZsv8bJ328ahdWNU94aW53XsW7aRR7DbvF6iXjeS_yIQLdSbf8yv9GPJHhkc7JzmxVJPVEsf_uHIJCG__hbmAogMh_9LixHsBDUQQ_emzv6b.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dqukldtq1/video/upload/v1778176938/WhatsApp_Video_2026-05-05_at_8.23.14_PM_1_tvfmuj.mp4" type="video/mp4" />
               </video>
             </div>
             
             <div className="absolute -top-6 -right-6 bg-lavie-gold text-lavie-navy px-8 py-6 rounded-2xl shadow-2xl border border-white/20 ring-1 ring-lavie-gold animate-float">
               <p className="text-3xl font-serif font-bold leading-tight">60'</p>
               <p className="text-[8px] font-black uppercase tracking-widest leading-none">Minutos</p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const SixtyMinSecondSection = () => {
+  return (
+    <section className="py-24 bg-lavie-navy overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="lg:grid lg:grid-cols-2 gap-16 items-center">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="mb-12 lg:mb-0 order-2 lg:order-1"
+          >
+            <div className="inline-flex items-center gap-3 bg-white/10 text-lavie-gold px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest mb-8">
+              <Zap className="w-3 h-3" />
+              Laundry Hub
+            </div>
+            <h2 className="font-serif text-5xl lg:text-7xl font-bold text-white mb-8 leading-none">
+              Praticidade <br/>
+              e Rapidez <br/>
+              <span className="text-lavie-gold italic">Extrema.</span>
+            </h2>
+            <p className="text-white/60 text-lg leading-relaxed mb-10 font-medium max-w-md">
+              Dê um upgrade na sua rotina. Nosso espaço é planejado para que você tenha a melhor experiência de lavanderia da sua vida, com o suporte que só a La Vie oferece.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="https://wa.me/5511912231700"
+                target="_blank"
+                className="bg-lavie-gold text-lavie-navy px-10 py-5 rounded-full font-black uppercase text-[10px] tracking-widest hover:brightness-110 transition-all shadow-xl shadow-lavie-gold/20 flex items-center justify-center gap-2"
+              >
+                Falar Conosco
+              </a>
+              <a 
+                href="https://www.google.com/maps/dir/?api=1&destination=Rua+Clélia+414+São+Paulo"
+                target="_blank"
+                className="bg-white/10 border border-white/20 text-white px-10 py-5 rounded-full font-black uppercase text-[10px] tracking-widest hover:bg-white/20 transition-all flex items-center justify-center gap-2"
+              >
+                <Navigation className="w-4 h-4" />
+                Como Chegar
+              </a>
+            </div>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="relative flex justify-center order-1 lg:order-2"
+          >
+            <div className="gold-block-ring overflow-hidden aspect-[9/16] h-[600px] relative bg-black shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+              <video 
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                className="w-full h-full object-cover opacity-80"
+              >
+                <source src="https://res.cloudinary.com/dqukldtq1/video/upload/v1778176941/WhatsApp_Video_2026-05-05_at_8.23.14_PM_2_c8zfss.mp4" type="video/mp4" />
+              </video>
+              <div className="absolute inset-0 bg-gradient-to-t from-lavie-navy/40 to-transparent"></div>
             </div>
           </motion.div>
         </div>
@@ -663,7 +730,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-lavie-navy/60 max-w-md text-lg leading-relaxed mb-10 font-medium">
-              Experiência de autoatendimento assistido. Tecnologia europeia com o cuidado artesanal que seus tecidos merecem.
+              Experiência de autoatendimento assistido. Tecnologia de ponta com o cuidado artesanal que seus tecidos merecem.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
@@ -686,16 +753,20 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="lg:col-span-6 relative flex justify-center lg:justify-end animate-float"
+            className="lg:col-span-6 relative flex justify-center lg:justify-end"
           >
             <div className="relative group max-w-lg w-full">
               <div className="absolute -inset-8 bg-lavie-gold/5 blur-[100px] rounded-full animate-pulse"></div>
-              <div className="relative logo-shine-container rounded-full ring-8 ring-lavie-gold/10 p-2 shadow-[0_0_100px_rgba(212,175,55,0.2)]">
-                <img 
-                  src="https://res.cloudinary.com/dqukldtq1/image/upload/v1777833485/WhatsApp_Image_2026-05-03_at_3.11.51_PM_1_lsb0ai.jpg" 
-                  alt="Selo Lavanderia La Vie" 
-                  className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(212,175,55,0.3)] rounded-full hover:scale-105 transition-transform duration-700"
-                />
+              <div className="relative logo-shine-container rounded-[2rem] ring-8 ring-lavie-gold/10 overflow-hidden shadow-[0_0_100px_rgba(212,175,55,0.2)] aspect-video bg-lavie-navy">
+                <video 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src="https://res.cloudinary.com/dqukldtq1/video/upload/v1778176935/WhatsApp_Video_2026-05-05_at_8.23.14_PM_ql78vq.mp4" type="video/mp4" />
+                </video>
               </div>
 
               {/* Float-in Badges */}
@@ -764,7 +835,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-[10px] font-black text-lavie-pool uppercase tracking-[0.4em] mb-6">Expertise La Vie</h2>
+            <h2 className="text-[10px] font-black text-lavie-pool uppercase tracking-[0.4em] mb-6">Expertise <span translate="no">La Vie</span></h2>
             <h3 className="font-serif text-5xl lg:text-6xl font-bold text-lavie-navy leading-tight">Serviços que vão <br/> além do comum.</h3>
           </div>
           <p className="text-lavie-navy/50 max-w-sm mb-4 leading-relaxed italic">
@@ -822,7 +893,7 @@ const AboutSection = () => {
             
             <div className="space-y-8 mb-12">
               <p className="text-lg leading-relaxed text-lavie-navy/70 text-center lg:text-left">
-                A <strong>La Vie</strong> nasceu em São Paulo para redefinir o conceito de <i>Laundromat</i>. Unimos a praticidade das máquinas industriais com a curadoria que peças de luxo exigem.
+                A <strong translate="no">La Vie</strong> nasceu em São Paulo para redefinir o conceito de <i>Laundromat</i>. Unimos a praticidade das máquinas industriais com a curadoria que peças de luxo exigem.
               </p>
               
               <div className="grid grid-cols-2 gap-8 border-t border-lavie-navy/10 pt-10">
@@ -993,7 +1064,7 @@ const Footer = () => {
 
         <div className="pt-12 border-t border-lavie-gold/10 flex flex-col md:flex-row justify-between items-center gap-8">
            <p className="text-[10px] font-bold uppercase tracking-widest text-lavie-navy/40">
-             © 2026 Lavanderia La Vie. Todos os direitos reservados.
+             © 2026 Lavanderia <span translate="no">La Vie</span>. Todos os direitos reservados.
            </p>
            <p className="text-[8px] font-black uppercase tracking-[0.4em] text-lavie-navy/40 flex items-center gap-2">
              Design to Premium <Award className="w-3 h-3 text-lavie-gold" /> Excellence
@@ -1011,6 +1082,7 @@ export default function App() {
       <Hero />
       <GoogleReviews />
       <SixtyMinSection />
+      <SixtyMinSecondSection />
       <AirbnbSection />
       <InstagramFeed />
       <ProcessAndItems />
